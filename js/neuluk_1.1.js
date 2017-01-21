@@ -1,0 +1,59 @@
+$(document).ready(function(){
+  $("#link_home").click(function(){
+    $("#link_home").addClass("active");
+    $("#link_team").removeClass("active");
+    $("#link_projects").removeClass("active");
+    $("#link_references").removeClass("active");
+    $("#link_news").removeClass("active");
+    $("#link_contact").removeClass("active");
+  });
+  $("#link_team").click(function(){
+    $("#link_home").removeClass("active");
+    $("#link_team").addClass("active");
+    $("#link_projects").removeClass("active");
+    $("#link_references").removeClass("active");
+    $("#link_news").removeClass("active");
+    $("#link_contact").removeClass("active");
+  });
+  $("#link_projects").click(function(){
+    $("#link_home").removeClass("active");
+    $("#link_team").removeClass("active");
+    $("#link_projects").addClass("active");
+    $("#link_references").removeClass("active");
+    $("#link_news").removeClass("active");
+    $("#link_contact").removeClass("active");
+  });
+  $("#link_references").click(function(){
+    $("#link_home").removeClass("active");
+    $("#link_team").removeClass("active");
+    $("#link_projects").removeClass("active");
+    $("#link_references").addClass("active");
+    $("#link_news").removeClass("active");
+    $("#link_contact").removeClass("active");
+  });
+  $("#link_news").click(function(){
+    $("#link_home").removeClass("active");
+    $("#link_team").removeClass("active");
+    $("#link_projects").removeClass("active");
+    $("#link_references").removeClass("active");
+    $("#link_news").addClass("active");
+    $("#link_contact").removeClass("active");
+  });
+  $("#link_contact").click(function(){
+    $("#link_home").removeClass("active");
+    $("#link_team").removeClass("active");
+    $("#link_projects").removeClass("active");
+    $("#link_references").removeClass("active");
+    $("#link_news").removeClass("active");
+    $("#link_contact").addClass("active");
+  });
+});
+
+function expandMenu() {
+  var x = document.getElementById("navigation");
+  if (x.classList.contains("expand")) {
+    x.classList.remove("expand")
+  } else {
+    x.classList.add("expand");
+  }
+}

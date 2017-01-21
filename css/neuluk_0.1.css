@@ -1,0 +1,313 @@
+/*--------------all--------------*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+html {
+  height: 100%
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.middle {
+  text-align: center;
+}
+
+.thick {
+  font-weight: bold;
+}
+
+.line {
+  margin: 5px 10px 5px 10px;
+}
+
+.container {
+  padding: 20px;
+  width: 100%;
+}
+
+/*--------------navigation--------------*/
+#navigation {
+  position: fixed;
+  border-bottom: 1px solid #cacaca;
+  text-transform: uppercase;
+  width: 100%;
+  height: 52px;
+  transition: all 0.1s ease;
+  background: white;
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(77,77,77,0.35);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(77,77,77,0.35);
+  box-shadow: 0px 0px 1px 0px rgba(77,77,77,0.35);
+  text-align: center;
+}
+
+#navigation ul li.active {
+  color: black;
+}
+
+#navigation.topnav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navigation.topnav ul li {  
+  display: inline-block;
+}
+
+#navigation.topnav ul a {
+  display: inline-block;
+  color: #cacaca;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#navigation.topnav ul li a:hover {
+  background-color: #cacaca;
+  color: black;
+}
+
+#navigation.topnav ul li a.active {
+  color: black;
+}
+
+#navigation.topnav ul li.icon {display: none;}
+
+#navigation img.img-valign {
+  vertical-align: middle;
+  margin-bottom: 0.25em;
+}
+
+
+/*-------------small screen--------------*/
+
+@media screen and (max-width:775px) {
+  #navigation.topnav ul li {
+    float: left;
+    transition: all 0.4s ease;
+  }
+
+  #navigation.topnav ul li:not(:first-child) {
+    display: none;
+  }
+  #navigation.topnav ul li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/*-------------expand nav--------------*/
+
+@media screen and (max-width:775px) {
+  #navigation.expand {
+    height: 319px;
+  }
+  #navigation.topnav.expand ul li {
+    float: none;
+    display: inline;
+  }
+  #navigation.topnav.expand ul {position: relative;}
+  #navigation.topnav.expand ul li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #navigation.topnav.expand ul li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+/*--------------home--------------*/
+#content {
+  margin:0  auto;
+  min-height: 100%;
+  padding: 52px 10px 52px 10px;
+}
+
+.border {
+  margin-top: 20px;
+}
+
+.big {
+    font-size: 20px;  
+}
+
+.main {
+  min-height: 440px
+}
+
+/*-----------background images---------*/
+#home {
+  /*background-image: url(../images/background_01.jpg);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#about_us {
+  background-image: url(../images/background_02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#offers {
+  background-image: url(../images/background_03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#contact {
+  background-image: url(../images/background_04.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#imprint {
+  background-image: url(../images/background_05.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/*--------------contact--------------*/
+.small {
+  font-size: 12px;
+}
+
+/*--------------footer--------------*/
+#footer {
+  font-size: 12px;
+  position: fixed;
+  border-top: 1px solid #cacaca;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  height: 52px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(77,77,77,0.35);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(77,77,77,0.35);
+  box-shadow: 0px 0px 1px 0px rgba(77,77,77,0.35);
+  color: #777;
+}
+
+#footer a {
+  color: #777;
+}
+
+#footer a:hover {
+  color: black;
+}
+
+.left {
+  float: left;
+}
+
+/* colors */
+.light {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9fcf7+0,f5f9f0+100;L+Green+3D */
+  background: #f9fcf7; /* Old browsers */
+  background: -moz-linear-gradient(left,  #f9fcf7 0%, #f5f9f0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #f9fcf7 0%,#f5f9f0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #f9fcf7 0%,#f5f9f0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fcf7', endColorstr='#f5f9f0',GradientType=1 ); /* IE6-9 */
+  border-bottom: 1px solid #fcfff4;
+}
+
+.light a {
+  color: black;
+}
+
+.light a:hover {
+  color: black;
+}
+
+.dark {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f4c6b+0,3f4c6b+63 */
+  background: white;
+}
+
+.dark a {
+  color: white;
+}
+
+.slideshow-container {
+  max-width: 720px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #777;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #1585cf;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  text-align: start;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #cacaca;
+}
+
+#maps {
+  width: 100%;
+}
