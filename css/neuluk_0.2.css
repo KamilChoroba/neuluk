@@ -48,6 +48,10 @@ body {
   color: black;
 }
 
+.float_right {
+  float: right;
+}
+
 /*--------------navigation--------------*/
 header {
   position: fixed;
@@ -81,7 +85,7 @@ header {
 }
 
 #navigation.topnav ul a {
-  display: inline-block;
+  display: block;
   color: #cacaca;
   text-align: center;
   padding: 14px 16px;
@@ -106,49 +110,6 @@ header {
 }
 
 
-/*-------------small screen--------------*/
-
-@media screen and (max-width:775px) {
-  #navigation.topnav ul li {
-    float: left;
-    transition: all 0.4s ease;
-  }
-
-  #navigation.topnav ul li:not(:first-child) {
-    display: none;
-  }
-
-  #navigation.topnav ul li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-/*-------------expand nav--------------*/
-
-@media screen and (max-width:775px) {
-  #navigation.expand {
-    height: 319px;
-  }
-
-  #navigation.topnav.expand ul li {
-    float: none;
-    display: inline;
-  }
-
-  #navigation.topnav.expand ul {position: relative;}
-
-  #navigation.topnav.expand ul li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  #navigation.topnav.expand ul li a {
-    display: block;
-    text-align: left;
-  }
-}
 
 /*--------------home--------------*/
 #content {
@@ -334,4 +295,59 @@ header {
 
 #maps {
   width: 100%;
+}
+
+/*-------------small screen--------------*/
+
+@media screen and (max-width:775px) {
+  header {
+    position: relative;
+    width: 100%;
+    background: white
+  }
+
+  #content {
+    margin:0  auto;
+    min-height: 100%;
+    padding: 10px 10px 52px 10px;
+  }
+
+  #navigation.topnav ul {position: relative;}
+
+  #navigation.topnav ul a {text-align: left}
+
+  #navigation.topnav ul li {
+    float: left;
+    transition: all 0.4s ease;
+  }
+
+  #navigation.topnav ul li:not(:first-child) {
+    display: none;
+  }
+
+  #navigation.topnav ul li.icon {
+    float: none;
+    display: block;
+  }
+
+  #navigation.expand {
+    height: 530px;
+  }
+
+  #navigation.topnav.expand ul li {
+    float: none;
+    display: inline;
+  }
+
+  #navigation.topnav.expand ul {position: relative;}
+
+  #navigation.topnav.expand ul li.icon {
+    right: 0;
+    top: 0;
+  }
+
+  #navigation.topnav.expand ul li a {
+    display: block;
+    text-align: left;
+  }
 }
