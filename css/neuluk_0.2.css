@@ -23,6 +23,10 @@ body {
   text-align: left;
 }
 
+.text_center {
+  text-align: center;
+}
+
 .thick {
   font-weight: bold;
 }
@@ -125,7 +129,7 @@ header {
 #content {
   margin:0  auto;
   min-height: 100%;
-  max-width: 870px;
+  max-width: 1024px;
   padding: 247px 0px 52px 0px;
   float: none;
 }
