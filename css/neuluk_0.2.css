@@ -68,6 +68,10 @@ body {
   float: left;
 }
 
+.padding_up {
+  padding: 10px 0px 10px 0px;
+}
+
 /*--------------navigation--------------*/
 header {
   position: fixed;
