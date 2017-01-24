@@ -31,15 +31,6 @@ body {
   font-weight: bold;
 }
 
-.line {
-  margin: 5px 10px 5px 10px;
-}
-
-.container {
-  padding: 10px 20px 10px 20px
-  width: 100%;
-}
-
 .top-container {
   padding: 20px 20px 10px 20px
 }
@@ -70,6 +61,11 @@ body {
 
 .padding_up {
   padding: 10px 0px 10px 0px;
+}
+
+.row {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /*--------------navigation--------------*/
@@ -134,7 +130,7 @@ header {
   margin:0  auto;
   min-height: 100%;
   max-width: 1024px;
-  padding: 247px 0px 52px 0px;
+  padding: 237px 15px 55px 15px;
   float: none;
 }
 
