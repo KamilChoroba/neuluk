@@ -13,6 +13,11 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-size: 90%;
+}
+
+a {
+  color: black;
 }
 
 .middle {
@@ -64,8 +69,17 @@ body {
 }
 
 .row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.row_small {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+img {
+  vertical-align: baseline;
 }
 
 /*--------------navigation--------------*/
@@ -109,11 +123,6 @@ header {
   transition: 0.3s;
 }
 
-#navigation.topnav ul li a:hover {
-  background-color: #cacaca;
-  color: black;
-}
-
 #navigation.topnav ul li a.active {
   color: black;
 }
@@ -130,7 +139,7 @@ header {
   margin:0  auto;
   min-height: 100%;
   max-width: 1024px;
-  padding: 237px 15px 55px 15px;
+  padding: 250px 15px 55px 15px;
   float: none;
 }
 
